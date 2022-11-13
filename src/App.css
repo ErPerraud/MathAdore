@@ -1,9 +1,12 @@
 .App {
   text-align: center;
+  background-color: #482c34;
+  height: 100%;
+  color: white;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 8vmin;
   pointer-events: none;
 }
 
@@ -14,18 +17,57 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: sticky;
+  min-height: 8vh;
+  max-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; 
   font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 0px 10px 200px black;
+
+}
+
+.Div-app-logo {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+}
+
+.Nav-app {
+  width: 50%;
+  height: 100%;
+}
+
+.Nav-app ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  margin: 0 0 0 0;
+  list-style: none;
+}
+
+.Nav-app ul a {
+  padding: 5% 5% 5% 5%;
+  height: 100%;
+  width: 100%;
+  transition: 100ms;
+}
+
+.Nav-app ul a:hover {
+  background-color: #A82c34;
+  padding: 7% 5% 5% 5%;
+  height: 100%;
+  transition: 100ms;
 }
 
 .App-link {
-  color: #61dafb;
+  color: white;
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +77,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Content {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
